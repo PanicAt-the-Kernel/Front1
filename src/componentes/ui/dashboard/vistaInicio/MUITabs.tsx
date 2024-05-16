@@ -39,11 +39,7 @@ function a11yProps(index: number) {
 }
 
 export default function MUITabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (newValue: number) => {
-    setValue(newValue);
-  };
+  const [value] = React.useState(0);
 
   return (
     <Box sx={{ width: "100%" }}>
