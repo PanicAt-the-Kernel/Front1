@@ -34,7 +34,7 @@ const initialCategories = [
 ];
 
 const TablaCategoria: React.FC = () => {
-  const [categories, setCategories] = useState<Category[]>(initialCategories);
+  const [categories] = useState<Category[]>(initialCategories);
   const [editingCategory, setEditingCategory] = useState<Category | null>(null);
   const [open, setOpen] = useState(false);
 

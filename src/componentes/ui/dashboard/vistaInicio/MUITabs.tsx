@@ -41,7 +41,7 @@ function a11yProps(index: number) {
 export default function MUITabs() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (newValue: number) => {
     setValue(newValue);
   };
 
@@ -50,7 +50,7 @@ export default function MUITabs() {
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
-          onChange={handleChange}
+          //onChange={handleChange}
           aria-label="basic tabs example"
           centered
         >
